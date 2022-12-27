@@ -18,5 +18,8 @@
 <symbol> ::=  "|" | " " | "!" | "#" | "$" | "%" | "&" | "(" | ")" | "*" | "+" | "," | "-" | "." | "/" | ":" | ";" | ">" | "=" | "<" | "?" | "@" | "[" | "\\" | "]" | "^" | "_" | "`" | "{" | "}" | "~"
 
 <comment> ::= ">" " "* (<digit> | <letter> | " " | <symbol>)+
-<value> ::= "'" (<digit> | <letter> | " " | <symbol>)* "'" | <digit>+ | "."* <digit>+ "."* <digit>*
+
+<header> ::= <letter>+ ":" ("\n" " "* <key>)*
+
+<value> ::= "\"" (<digit> | <letter> | " " | <symbol>)* "\"" | <digit>+ | "."* <digit>+ "."* <digit>*
 <key> ::= <letter>+ "=" <value> " "* <comment>*
