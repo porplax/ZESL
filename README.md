@@ -28,7 +28,7 @@ pip install zesl
        | "c" | "d" | "e" | "f" | "g" | "h" | "i"
        | "j" | "k" | "l" | "m" | "n" | "o" | "p"
        | "q" | "r" | "s" | "t" | "u" | "v" | "w"
-       | "x" | "y" | "z" 
+       | "x" | "y" | "z"
 
 <digit> ::= "0" | "1" | "2" | "3" | "4" | "5"
 	   | "6" | "7" | "8" | "9"
@@ -36,6 +36,9 @@ pip install zesl
 <symbol> ::=  "|" | " " | "!" | "#" | "$" | "%" | "&" | "(" | ")" | "*" | "+" | "," | "-" | "." | "/" | ":" | ";" | ">" | "=" | "<" | "?" | "@" | "[" | "\\" | "]" | "^" | "_" | "`" | "{" | "}" | "~"
 
 <comment> ::= ">" " "* (<digit> | <letter> | " " | <symbol>)+
+
+<header> ::= <letter>+ ":" ("\n" " "* <key>)*
+
 <value> ::= "\"" (<digit> | <letter> | " " | <symbol>)* "\"" | <digit>+ | "."* <digit>+ "."* <digit>*
 <key> ::= <letter>+ "=" <value> " "* <comment>*
 ```
@@ -44,9 +47,13 @@ pip install zesl
 **ZESL** supports strings, integers, and floats. **ZESL** also support usage of comments.
 ```
 > This is a comment.
-city="Salt Lake City, Utah"
-area=801
-precipitation=50.0
+Local:
+ city="Salt Lake City, Utah"
+ area=801
+ precipitation=50.0
+
+car="Sedan"
+year=2011
 ```
 There are multiple ways to type a value, however there're some *big* **no-no(s)**.
 
