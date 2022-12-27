@@ -8,7 +8,7 @@ Inspired by **Tom's Obvious Minimal Language (TOML)** and **YAML**
 This project isn't serious btw; This was just a side project 👀.
 **ZESL** won't be getting regularly scheduled updates.
 
-## **Install**
+## **Usage**
 **ZESL** has its own official module hosted on PYPI. It uses Lark to parse content. 
 ```py
 pip install zesl
