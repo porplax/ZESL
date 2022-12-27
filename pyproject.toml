@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "zesl"
+version = "0.2.0a2"
+description = "Zayne's Extremely Simple Language"
+authors = ["Zayne Marsh"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.4"
+lark = "^1.1.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
