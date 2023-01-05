@@ -55,7 +55,6 @@ Local:
 car="Sedan"
 year=2011
 ```
-There are multiple ways to type a value, however there're some *big* **no-no(s)**.
 
 ----
 
@@ -68,6 +67,5 @@ quote="Do not fear mistakes. There are none. (Miles Davis)" > Correct way to wri
 # Goals
 
 If I do decide to at least dedicate **SOME** of my time to this project, here's what I would do.
-- Improve BNF grammar. Adding double-quotes and/or back-ticks for string would be nice. Make context a bit more loose.
 - Add `[]` and `{}`, allows for defining dicts and/or lists.
 - Syntax sugar!?
